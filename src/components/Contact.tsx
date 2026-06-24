@@ -21,7 +21,7 @@ const details = [
   {
     icon: MapPin,
     label: "Office",
-    value: "Dublin, Ireland",
+    value: "49 North Main Street, Wexford Town, Y35 YT44",
     href: "#map",
   },
 ];

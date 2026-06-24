@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -40,21 +41,19 @@ export function Navbar() {
         aria-label="Primary"
         className="container-edge flex h-16 items-center justify-between sm:h-20"
       >
-        <a href="#" className="group flex items-center gap-2.5">
-          <span className="relative grid h-9 w-9 place-items-center rounded-xl border border-white/10 bg-gradient-to-br from-accent-500/30 to-accent-glow/10">
-            <span className="font-display text-lg font-semibold text-white">
-              D
-            </span>
-            <span className="absolute inset-0 rounded-xl bg-accent-500/20 opacity-0 blur-md transition-opacity duration-500 group-hover:opacity-100" />
-          </span>
-          <span className="flex flex-col leading-none">
-            <span className="text-[15px] font-semibold tracking-tight text-ink-50">
-              Doublewit
-            </span>
-            <span className="text-[10px] uppercase tracking-[0.22em] text-ink-400">
-              Consultancy
-            </span>
-          </span>
+        <a
+          href="#"
+          aria-label="Doublewit Consulting Ltd — home"
+          className="group flex items-center"
+        >
+          <Image
+            src="/logo.png"
+            alt="Doublewit Consulting Ltd"
+            width={547}
+            height={200}
+            priority
+            className="block h-10 w-auto transition-opacity duration-300 group-hover:opacity-90 sm:h-12"
+          />
         </a>
 
         <ul className="hidden items-center gap-1 lg:flex">

@@ -55,7 +55,9 @@ export default function PrivacyPage() {
 
       <h2>Contact</h2>
       <p>
-        Doublewit Consultancy Limited, Dublin, Ireland.
+        Doublewit Consultancy Limited
+        <br />
+        49 North Main Street, Wexford Town, Y35 YT44, Ireland.
         <br />
         Email: <a href="mailto:seamus@doublewit.eu">seamus@doublewit.eu</a>
       </p>

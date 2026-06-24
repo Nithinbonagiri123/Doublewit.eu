@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Linkedin, Twitter, Facebook, Instagram } from "lucide-react";
 
 const socials = [
@@ -33,7 +34,7 @@ const columns = [
     links: [
       { label: "seamus@doublewit.eu", href: "mailto:seamus@doublewit.eu" },
       { label: "+353 89 453 7395", href: "tel:+353894537395" },
-      { label: "Dublin, Ireland", href: "#map" },
+      { label: "Wexford Town, Ireland", href: "#map" },
     ],
   },
 ];
@@ -44,23 +45,23 @@ export function Footer() {
       <div className="container-edge py-16">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-5">
-            <a href="#" className="inline-flex items-center gap-2.5">
-              <span className="grid h-9 w-9 place-items-center rounded-xl border border-white/10 bg-gradient-to-br from-accent-500/30 to-accent-glow/10 font-display text-lg font-semibold text-white">
-                D
-              </span>
-              <span className="flex flex-col leading-none">
-                <span className="text-[15px] font-semibold tracking-tight text-ink-50">
-                  Doublewit
-                </span>
-                <span className="text-[10px] uppercase tracking-[0.22em] text-ink-400">
-                  Consultancy
-                </span>
-              </span>
+            <a
+              href="#"
+              aria-label="Doublewit Consulting Ltd — home"
+              className="inline-flex items-center"
+            >
+              <Image
+                src="/logo.png"
+                alt="Doublewit Consulting Ltd"
+                width={547}
+                height={200}
+                className="block h-14 w-auto"
+              />
             </a>
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-ink-300">
               Strategic consultancy helping businesses move from challenges to
-              measurable success. Based in Ireland, working with clients across
-              the EU and beyond.
+              measurable success. Based in Wexford, working with clients across
+              Ireland, the EU and beyond.
             </p>
             <ul className="mt-7 flex items-center gap-2">
               {socials.map((s) => (
