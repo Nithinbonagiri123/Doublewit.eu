@@ -1,0 +1,50 @@
+.prose h1 {
+  font-family: var(--font-display), serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: #f5f7fb;
+  background: linear-gradient(120deg, #f5f7fb 0%, #7aa8ff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.prose h2 {
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
+  font-family: var(--font-display), serif;
+  font-size: 1.35rem;
+  color: #f5f7fb;
+}
+
+.prose p,
+.prose li {
+  color: #a3adc2;
+  line-height: 1.7;
+  font-size: 0.975rem;
+}
+
+.prose p {
+  margin-top: 1rem;
+}
+
+.prose ul {
+  margin-top: 0.75rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.prose a {
+  color: #7aa8ff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.prose .meta {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #7b86a0;
+}
